@@ -10,8 +10,52 @@
   <body>
 
     <div ng-controller="MainCtrl">
-      <div id="grid1" ui-grid="gridOptions" ui-grid-tree-view ui-grid-selection class="grid"></div>
+     <div class="row">
+		<div class="col-md-12">
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label class="col-md-5 " for="appID">APPID:</label> <input
+						type="text" class="col-md-7" name="appID"
+						ng-model="appId"
+						id="appID" />
+				</div>
+
+			</div>
+
+
+
+		</div>
+		<div class="col-md-12">
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label class="col-md-5 " for="firstName">PASSWORD:</label> <input
+						type="text" class="col-md-7" name="firstName"
+						ng-model="password"
+						id="password"  />
+				</div>
+
+			</div>
+
+
+
+		</div>
+		<div class="col-md-12">
+			<div class="col-md-4">
+				<div class="form-group">
+					<button class="col-md-4" id="submit"
+						ng-click="submit(appId,password)">Submit</button>
+				</div>
+
+			</div>
+		</div>
+		
+		{{result}}
+	</div>
     </div>
+    
+ 
 
     <script src="app.js"></script>
   </body>
