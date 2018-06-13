@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+
+    <div ng-controller="MainCtrl">
+      <div id="grid1" ui-grid="gridOptions" ui-grid-tree-view ui-grid-selection class="grid"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
